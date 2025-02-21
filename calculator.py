@@ -59,7 +59,11 @@ class Calculator:
 
         
 
-calculator = Calculator
+calculator = Calculator()
+
+def main():
+    calculator.root()
+    calculator.create_widgets()
 
 
 
