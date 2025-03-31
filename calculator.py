@@ -36,6 +36,22 @@ class Calculator:
 
     # ---------- CREATE WIDGETS --------- #
     def create_widgets(self):
+
+        # button 1
+        self.btn_calculator = tk.Button(
+                text="1",
+                #command=self.get_data
+            )
+
+        self.lbl_calculator = tk.Label(
+            wraplength=250,
+            justify="left"
+        )
+
+        PAD = 10
+        self.btn_calculator.grid(row=1, column=1, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=1, column=1, padx=PAD, pady=PAD, sticky='W')
+
         # button 2
         self.btn_calculator = tk.Button(
             text="2",
@@ -63,8 +79,8 @@ class Calculator:
         )
 
         PAD = 10
-        self.btn_calculator.grid(row=5, column=5, padx=PAD, pady=PAD, sticky='E')
-        self.lbl_calculator.grid(row=5, column=5, padx=PAD, pady=PAD, sticky='E')
+        self.btn_calculator.grid(row=5, column=2, padx=PAD, pady=PAD, sticky='E')
+        self.lbl_calculator.grid(row=5, column=2, padx=PAD, pady=PAD, sticky='E')
 
         # button 4
         self.btn_calculator = tk.Button(
@@ -78,10 +94,53 @@ class Calculator:
         )
 
         PAD = 10
-        self.btn_calculator.grid(row=5, column=4, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=5, column=4, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=5, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=5, column=3, padx=PAD, pady=PAD, sticky='W')
 
-        # button 3
+        # button 5
+        self.btn_calculator = tk.Button(
+                text="5",
+                #command=self.get_data
+            )
+
+        self.lbl_calculator = tk.Label(
+            wraplength=250,
+            justify="left"
+        )
+
+        PAD = 10
+        self.btn_calculator.grid(row=5, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=5, column=3, padx=PAD, pady=PAD, sticky='W')
+        
+        # button 6
+        self.btn_calculator = tk.Button(
+                text="6",
+                #command=self.get_data
+            )
+
+        self.lbl_calculator = tk.Label(
+            wraplength=250,
+            justify="left"
+        )
+
+        PAD = 10
+        self.btn_calculator.grid(row=5, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=5, column=3, padx=PAD, pady=PAD, sticky='W')
+
+        # button 7
+        self.btn_calculator = tk.Button(
+                text="7",
+                #command=self.get_data
+            )
+
+        self.lbl_calculator = tk.Label(
+            wraplength=250,
+            justify="left"
+        )
+
+        PAD = 10
+        self.btn_calculator.grid(row=5, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=5, column=3, padx=PAD, pady=PAD, sticky='W')   
         # The enter key will activate the calculate method
         #self.root.bind("<Return>", self.get_data)
         #self.root.bind("<KP_Enter>", self.get_data)
