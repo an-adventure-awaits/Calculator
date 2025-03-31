@@ -23,7 +23,7 @@ class Calculator:
         # button
         self.button_1 = tk.Button(
             self.root,
-            text="Calculator 1",
+            text="CALCULATOR",
             
             # text position
             #command=click_button,
@@ -32,7 +32,8 @@ class Calculator:
             relief="groove"
             )
 
-        self.button_1.grid(row=4, column=1)
+        self.button_1.grid(row=1, column=2)
+        
 
     # ---------- CREATE WIDGETS --------- #
     def create_widgets(self):
@@ -48,9 +49,9 @@ class Calculator:
             justify="left"
         )
 
-        PAD = 10
-        self.btn_calculator.grid(row=1, column=1, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=1, column=1, padx=PAD, pady=PAD, sticky='W')
+        PAD = 5
+        self.btn_calculator.grid(row=5, column=1, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=5, column=1, padx=PAD, pady=PAD, sticky='W')
 
         # button 2
         self.btn_calculator = tk.Button(
@@ -63,9 +64,9 @@ class Calculator:
             justify="left"
         )
 
-        PAD = 10
-        self.btn_calculator.grid(row=0, column=0, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=2, column=0, padx=PAD, pady=PAD, sticky='W')
+        PAD = 5
+        self.btn_calculator.grid(row=5, column=2, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=5, column=2, padx=PAD, pady=PAD, sticky='W')
         
         # button 3
         self.btn_calculator = tk.Button(
