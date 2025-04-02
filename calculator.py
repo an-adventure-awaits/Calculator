@@ -25,34 +25,25 @@ class Calculator:
     
 
         #self.entry.pack()
-        # button
-        self.button_1 = tk.Button(
-            self.root,
-            text="CALCULATOR",
-            
-            # text position
-            #command=click_button,
-
-            # button look
-            relief="groove"
-            )
-
-        self.button_1.grid(row=1, column=3)
+        
     # ---------- CREATE WIDGETS --------- #
-    def create_widgets_entry_box(self):
-        pass
-        #tk.Label(self.root, text="First Name").grid(row=0)
-        #tk.Label(self.root, text="Last Name").grid(row=1)
+    def create_widgets_txt_box(self):
+        PAD=3
+        #self.txt = tk.Text(self.root, height=5, width=40)
 
-        #e1 = tk.Entry(self.root)
-        #e2 = tk.Entry(self.root)
-
-        #e1.grid(row=0, column=1)
-        #e2.grid(row=1, column=1)
-    
+        self.display = tk.Label(
+            self.root,
+            height=5,
+            width=38,
+            text="Answer:"
+            )
+        self.display.grid(row=1, column=1, padx=PAD, pady=PAD, sticky='W')
+        
     
     def button_number_one(self):
         self.number_1 = 1
+        #if self.button_clicked:
+        
 
             # button 1
         self.btn_calculator = tk.Button(
@@ -186,8 +177,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=5, column=1, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=5, column=1, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=6, column=1, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=6, column=1, padx=PAD, pady=PAD, sticky='W')
 
             
     def button_number_eight(self):
@@ -206,8 +197,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=5, column=2, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=5, column=2, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=6, column=2, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=6, column=2, padx=PAD, pady=PAD, sticky='W')
          
     
     def button_number_nine(self):
@@ -412,7 +403,7 @@ calculator.subtracted_by()
 calculator.added_by()
 calculator.decimal()
 calculator.equals()
-#calculator.create_widgets_entry_box()
+calculator.create_widgets_txt_box()
 calculator.root.mainloop()
     
 
