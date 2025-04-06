@@ -16,7 +16,7 @@ class Calculator:
 
         self.root.title("CALCULATOR")
 
-        self.root.geometry("350x450")
+        self.root.geometry("300x350")
 
         self.root.configure(bg='pink')
 
@@ -37,7 +37,7 @@ class Calculator:
             width=38,
             text="Answer:"
             )
-        self.display.grid(row=1, column=1, padx=PAD, pady=PAD, sticky='W')
+        #self.display.grid(row=1, column=1:4, padx=PAD, pady=PAD, sticky='W')
         
     
     def button_number_one(self):
@@ -57,8 +57,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=9, column=1, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=9, column=1, padx=PAD, pady=PAD, sticky='W') 
+        self.btn_calculator.grid(row=29, column=1, padx=PAD, pady=PAD, sticky='SW')
+        self.lbl_calculator.grid(row=29, column=1, padx=PAD, pady=PAD, sticky='SW') 
 
         self.output = tk.Label(
             wraplength=250,
@@ -82,8 +82,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=9, column=2, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=9, column=2, padx=PAD, pady=PAD, sticky='W') 
+        self.btn_calculator.grid(row=29, column=2, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=29, column=2, padx=PAD, pady=PAD, sticky='W') 
         
 
     def button_number_three(self):
@@ -101,8 +101,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=9, column=3, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=9, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=27, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=27, column=3, padx=PAD, pady=PAD, sticky='W')
     
 
     def button_number_four(self):
@@ -120,8 +120,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=7, column=1, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=7, column=1, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=28, column=1, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=28, column=1, padx=PAD, pady=PAD, sticky='W')
     
 
     def button_number_five(self):
@@ -139,8 +139,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=7, column=2, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=7, column=2, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=28, column=2, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=28, column=2, padx=PAD, pady=PAD, sticky='W')
     
     
     def button_number_six(self):
@@ -158,8 +158,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=7, column=3, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=7, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=28, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=28, column=3, padx=PAD, pady=PAD, sticky='W')
         
     
     def button_number_seven(self):
@@ -177,8 +177,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=6, column=1, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=6, column=1, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=27, column=1, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=27, column=1, padx=PAD, pady=PAD, sticky='W')
 
             
     def button_number_eight(self):
@@ -197,8 +197,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=6, column=2, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=6, column=2, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=27, column=2, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=27, column=2, padx=PAD, pady=PAD, sticky='W')
          
     
     def button_number_nine(self):
@@ -216,8 +216,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=5, column=3, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=5, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=29, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=29, column=3, padx=PAD, pady=PAD, sticky='W')
 
 
     def button_number_zero(self):
@@ -235,8 +235,9 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=12, column=2, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=12, column=2, padx=PAD, pady=PAD, sticky='W') 
+        self.btn_calculator.grid(row=30, column=2, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=30, column=2, padx=PAD, pady=PAD, sticky='W')
+
 
     def divided_by(self):
 
@@ -252,8 +253,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=5, column=4, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=5, column=4, padx=PAD, pady=PAD, sticky='W') 
+        self.btn_calculator.grid(row=26, column=4, padx=PAD, pady=PAD, sticky='SW')
+        self.lbl_calculator.grid(row=26, column=4, padx=PAD, pady=PAD, sticky='SW') 
 
     def mulitplied_by(self):
         # button x (multiplied by) 
@@ -268,8 +269,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=7, column=4, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=7, column=4, padx=PAD, pady=PAD, sticky='W') 
+        self.btn_calculator.grid(row=27, column=4, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=27, column=4, padx=PAD, pady=PAD, sticky='W') 
 
     def subtracted_by(self):
 
@@ -285,8 +286,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=9, column=4, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=9, column=4, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=28, column=4, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=28, column=4, padx=PAD, pady=PAD, sticky='W')
 
     def added_by(self):
 
@@ -302,8 +303,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=12, column=4, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=12, column=4, padx=PAD, pady=PAD, sticky='W') 
+        self.btn_calculator.grid(row=29, column=4, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=29, column=4, padx=PAD, pady=PAD, sticky='W') 
 
     def decimal(self):
 
@@ -319,8 +320,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=12, column=3, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=12, column=3, padx=PAD, pady=PAD, sticky='W') 
+        self.btn_calculator.grid(row=30, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=30, column=3, padx=PAD, pady=PAD, sticky='W') 
 
     def equals(self):
 
@@ -336,8 +337,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=15, column=4, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=15, column=4, padx=PAD, pady=PAD, sticky='W') 
+        self.btn_calculator.grid(row=30, column=4, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=30, column=4, padx=PAD, pady=PAD, sticky='W') 
 
 
     def create_widgets_buttons(self):
