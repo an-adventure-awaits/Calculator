@@ -34,10 +34,11 @@ class Calculator:
         self.display = tk.Label(
             self.root,
             height=5,
-            width=38,
+            width=5,
             text="Answer:"
+
             )
-        #self.display.grid(row=1, column=1:4, padx=PAD, pady=PAD, sticky='W')
+        self.display.grid(row=1, column=4, padx=PAD, pady=PAD, sticky='W')
         
     
     def button_number_one(self):
@@ -101,8 +102,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=27, column=3, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=27, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=29, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=29, column=3, padx=PAD, pady=PAD, sticky='W')
     
 
     def button_number_four(self):
@@ -216,8 +217,8 @@ class Calculator:
         )
 
         PAD = 3
-        self.btn_calculator.grid(row=29, column=3, padx=PAD, pady=PAD, sticky='W')
-        self.lbl_calculator.grid(row=29, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.btn_calculator.grid(row=27, column=3, padx=PAD, pady=PAD, sticky='W')
+        self.lbl_calculator.grid(row=27, column=3, padx=PAD, pady=PAD, sticky='W')
 
 
     def button_number_zero(self):
@@ -325,6 +326,7 @@ class Calculator:
 
     def equals(self):
 
+
         # button = (equals)
         self.btn_calculator = tk.Button(
                 text="   =   ",
@@ -340,7 +342,56 @@ class Calculator:
         self.btn_calculator.grid(row=30, column=4, padx=PAD, pady=PAD, sticky='W')
         self.lbl_calculator.grid(row=30, column=4, padx=PAD, pady=PAD, sticky='W') 
 
+    def precent(self):
 
+        # button ÷ (divided by) 
+        self.btn_calculator = tk.Button(
+                text="   %   ",
+                #command=self.get_data
+            )
+
+        self.lbl_calculator = tk.Label(
+            wraplength=250,
+            justify="left"
+        )
+
+        PAD = 3
+        self.btn_calculator.grid(row=26, column=3, padx=PAD, pady=PAD, sticky='SW')
+        self.lbl_calculator.grid(row=26, column=3, padx=PAD, pady=PAD, sticky='SW') 
+
+    def positivenegative(self):
+        
+        # button ÷ (divided by) 
+        self.btn_calculator = tk.Button(
+                text="   -   ",
+                #command=self.get_data
+            )
+
+        self.lbl_calculator = tk.Label(
+            wraplength=250,
+            justify="left"
+        )
+
+        PAD = 3
+        self.btn_calculator.grid(row=26, column=2, padx=PAD, pady=PAD, sticky='SW')
+        self.lbl_calculator.grid(row=26, column=2, padx=PAD, pady=PAD, sticky='SW') 
+    
+    def AC(self):
+
+        # button ÷ (divided by) 
+        self.btn_calculator = tk.Button(
+                text="  AC  ",
+                #command=self.get_data
+            )
+
+        self.lbl_calculator = tk.Label(
+            wraplength=250,
+            justify="left"
+        )
+
+        PAD = 3
+        self.btn_calculator.grid(row=26, column=1, padx=PAD, pady=PAD, sticky='SW')
+        self.lbl_calculator.grid(row=26, column=1, padx=PAD, pady=PAD, sticky='SW') 
     def create_widgets_buttons(self):
         pass
 
@@ -399,6 +450,9 @@ calculator.button_number_eight()
 calculator.button_number_nine()
 calculator.button_number_zero()
 calculator.divided_by()
+calculator.precent()
+calculator.AC()
+calculator.positivenegative()
 calculator.mulitplied_by()
 calculator.subtracted_by()
 calculator.added_by()
