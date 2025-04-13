@@ -16,9 +16,9 @@ class Calculator:
 
         self.root.title("CALCULATOR")
 
-        self.root.geometry("300x350")
+        self.root.geometry("300x400")
 
-        self.root.configure(bg='pink')
+        self.root.configure(bg='#73E9FF')
 
         #self.entry = tk.Entry(
             #self.root)
@@ -64,7 +64,8 @@ class Calculator:
         self.output = tk.Label(
             wraplength=250,
             justify="left",
-            text="1"
+            text="1",
+            foreground='#73E9FF'
             )
         
 
