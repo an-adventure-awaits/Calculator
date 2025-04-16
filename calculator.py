@@ -72,9 +72,6 @@ class Calculator:
         print(self.number_2)
 
     def button_number_two(self):
-        self.number_2 = 2
-        
-
         # button 2
         self.btn_calculator = tk.Button(
             text="   2   ",
@@ -95,8 +92,6 @@ class Calculator:
         print(self.number_3)
 
     def button_number_three(self):
-        self.number_3 = 3
-
         # button 3
         self.btn_calculator = tk.Button(
             text="   3   ",
@@ -112,14 +107,15 @@ class Calculator:
         self.btn_calculator.grid(row=29, column=3, padx=PAD, pady=PAD, sticky='W')
         self.lbl_calculator.grid(row=29, column=3, padx=PAD, pady=PAD, sticky='W')
     
+    def button_click_four(self):
+        self.number_4 = 4
+        print(self.number_4)
 
     def button_number_four(self):
-        self.number_4 = 4
-
         # button 4
         self.btn_calculator = tk.Button(
                 text="   4   ",
-                #command=self.get_data
+                command=calculator.button_click_four
             )
 
         self.lbl_calculator = tk.Label(
@@ -131,14 +127,15 @@ class Calculator:
         self.btn_calculator.grid(row=28, column=1, padx=PAD, pady=PAD, sticky='W')
         self.lbl_calculator.grid(row=28, column=1, padx=PAD, pady=PAD, sticky='W')
     
+    def button_click_five(self):
+        self.number_5 = 5
+        print(self.number_5)
 
     def button_number_five(self):
-        self.number_5 = 5
-
         # button 5
         self.btn_calculator = tk.Button(
                 text="   5   ",
-                #command=self.get_data
+                command=calculator.button_click_five
             )
 
         self.lbl_calculator = tk.Label(
@@ -150,14 +147,15 @@ class Calculator:
         self.btn_calculator.grid(row=28, column=2, padx=PAD, pady=PAD, sticky='W')
         self.lbl_calculator.grid(row=28, column=2, padx=PAD, pady=PAD, sticky='W')
     
-    
-    def button_number_six(self):
+    def button_click_six(self):
         self.number_6 = 6
+        print(self.number_6)
 
+    def button_number_six(self):
         # button 6
         self.btn_calculator = tk.Button(
                 text="   6   ",
-                #command=self.get_data
+                command=calculator.button_click_six
             )
 
         self.lbl_calculator = tk.Label(
@@ -169,7 +167,10 @@ class Calculator:
         self.btn_calculator.grid(row=28, column=3, padx=PAD, pady=PAD, sticky='W')
         self.lbl_calculator.grid(row=28, column=3, padx=PAD, pady=PAD, sticky='W')
         
-    
+    def button_click_seven(self):
+        self.number_3 = 3
+        print(self.number_3)
+
     def button_number_seven(self):
         self.number_7 = 7
 
