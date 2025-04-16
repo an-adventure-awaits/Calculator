@@ -40,16 +40,15 @@ class Calculator:
             )
         self.display.grid(row=1, column=4, padx=PAD, pady=PAD, sticky='W')
         
-    
-    def button_number_one(self):
+    def button_click_one(self):
         self.number_1 = 1
-        #if self.button_clicked:
-        
+        print(self.number_1)
 
-            # button 1
+    def button_number_one(self):
+        # button 1
         self.btn_calculator = tk.Button(
                 text="   1   ",
-                command=self.number_1
+                command=calculator.button_click_one
             )
 
         self.lbl_calculator = tk.Label(
@@ -68,14 +67,18 @@ class Calculator:
             foreground='#73E9FF'
             )
         
+    def button_click_two(self):
+        self.number_2 = 2
+        print(self.number_2)
 
     def button_number_two(self):
         self.number_2 = 2
+        
 
         # button 2
         self.btn_calculator = tk.Button(
             text="   2   ",
-            #command=self.get_data
+            command=self.button_click_two
         )
 
         self.lbl_calculator = tk.Label(
@@ -87,6 +90,9 @@ class Calculator:
         self.btn_calculator.grid(row=29, column=2, padx=PAD, pady=PAD, sticky='W')
         self.lbl_calculator.grid(row=29, column=2, padx=PAD, pady=PAD, sticky='W') 
         
+    def button_click_three(self):
+        self.number_3 = 3
+        print(self.number_3)
 
     def button_number_three(self):
         self.number_3 = 3
@@ -94,7 +100,7 @@ class Calculator:
         # button 3
         self.btn_calculator = tk.Button(
             text="   3   ",
-            #command=self.get_data
+            command=calculator.button_click_three
         )
 
         self.lbl_calculator = tk.Label(
