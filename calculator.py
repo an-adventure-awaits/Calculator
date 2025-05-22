@@ -38,6 +38,7 @@ class Calculator:
             text="Answer:"
 
             )
+        # position
         self.display.grid(row=1, column=4, padx=PAD, pady=PAD, sticky='W')
         
     def button_click_one(self):
